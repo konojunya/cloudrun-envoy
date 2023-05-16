@@ -12,7 +12,7 @@ spec:
         run.googleapis.com/execution-environment: gen1 #or gen2
     spec:
       containers:
-        - image: asia-northeast1-docker.pkg.dev/cloudrun-envoy-sample/web/hono-app:latest
+        - image: asia-northeast1-docker.pkg.dev/cloudrun-envoy-sample/cloud-run-source-deploy/web@sha256:951f130f235d64533e8305f69934c3d775fa5b7cbc47a42f1afa658649e4bfac
           ports:
             - containerPort: 8080
-        - image: SIDECAR_IMAGE
+        - image: asia-northeast1-docker.pkg.dev/cloudrun-envoy-sample/sidecar/nginx@sha256:db4c7ba55b07491c12055c5646b9292064da56de3798208f97eb12e8ed57fa82
